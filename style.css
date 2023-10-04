@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(white,rgb(0, 221, 255),rgb(0, 17, 255));
+    flex-direction: column;
+}
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: white;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box input{
+    width: 84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    background-color: rgb(194, 239, 255);
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+.search-box input::placeholder{
+    color: black;
+}
+.search-box button{
+    width: 46px;
+    height: 46px;
+    background-color: rgb(194, 239, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size:20px;
+
+}
+.search-box button:hover{
+    color: white;
+    background-color: gray;
+}
+.weatherbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+.weatherbody img{
+    width: 60%;
+}
+.weatherbox{
+    margin-block: 20px;
+    text-align: center;
+}
+.weatherbox .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+.weatherbox .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+.weatherbox .description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.weatherdetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+.humidity{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+.weatherdetails i{
+    font-size: 36px;
+}
+.weatherdetails .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.locationnotfound{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.locationnotfound img{
+    width: 80%;
+}
+.locationnotfound h1{
+    font-size: 20px;
+    color: grey;
+    margin-block-end: 15px;
+}
+.title{
+    margin-bottom: 30px;
+    font-size: 250%;
+    text-shadow:0px 0px 30px rgb(255, 255, 255);
+}
+@media (min-width:0px) and (max-width:400px) {
+    .container{
+        width: 300px;
+    }
+    .humidity{
+        margin-left: 10px;
+    }
+    
+}
